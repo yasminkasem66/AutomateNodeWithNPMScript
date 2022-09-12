@@ -7,14 +7,16 @@
     "port": 4000
   },
   "scripts": {
-    "sass": "sass styles.scss  styles.css",
+    "sass": "sass styles.scss  styles.css  --watch",
     "tsc": "tsc",
     "prestart": "echo The PRETEST RUNNING && npm run tsc && npm run sass",
     "start": " node index.js",
     "start:dev": " nodemon index.js",
+    "start:tsdev": "ts-node-dev index.ts",
     "build:watch": "npm run tsc -- --watch",
-    "start:dev:watch": "npm-run-all tsc --parallel start:dev build:watch ",
+    "start:dev:watch": "npm-run-all tsc --parallel start:dev build:watch sass sync:watch ",
     "build": "webpack",
+    "sync:watch": "browser-sync start -p http://localhost:4000 -w -f index.html -f style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

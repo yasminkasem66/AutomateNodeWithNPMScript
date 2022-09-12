@@ -9,7 +9,7 @@ app.get('/x', (req, res) => {
     console.log("sdfgssd");
     res.send('Yasssssssssssssssmin');
 });
-const server = app.listen(port, () => console.log(`Server is listening on port ${port} yasmin helwaa gdn...`));
+const server = app.listen(port, () => console.log(`Server is listening on port ${port} yasmin helwaa gdn  ...`));
 module.exports = server;
 // npm script is a tool to help automate 
 // how to create and use some basics scripts 

@@ -14,7 +14,7 @@ app.get('/x',(req: any,res: { send: (arg0: string) => void; })=>{
 });
 
 const server =app.listen(port, () =>
-console.log(`Server is listening on port ${port} yasmin helwaa gdn...`)
+console.log(`Server is listening on port ${port} yasmin helwaa gdn  ...`)
 );
 module.exports=server;
 // npm script is a tool to help automate 
