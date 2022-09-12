@@ -9,10 +9,13 @@ app.get('/x', (req, res) => {
     console.log("sdfgssd");
     res.send('Yasssssssssssssssmin');
 });
-const server = app.listen(port, () => console.log(`Server is listening on port ${port}...`));
+const server = app.listen(port, () => console.log(`Server is listening on port ${port} yasmin helwaa gdn...`));
 module.exports = server;
 // npm script is a tool to help automate 
 // how to create and use some basics scripts 
 // life cycle scripts vs custom scripts 
 // life cycle scripts=> test, start , stop  , pre post
 // custom scripts  => any others
+// "build": "webpack",
+// "prestart": "npm run build",
+// "start": " node dist/app.js",
